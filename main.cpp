@@ -57,7 +57,7 @@ int main() {
     camera cam;
 
     cam.aspect_ratio        = 16.0 / 9.0;
-    cam.image_width         = 200;
+    cam.image_width         = 1920;
     cam.samples_per_pixel   = 100;
     cam.max_depth           = 50;
 
@@ -96,6 +96,7 @@ int main() {
     // cam.defocus_angle   = 10.0;
     // cam.focus_dist      = 3.4;
     
-    cam.render(world);
+    // cam.render(world, true);
+    cam.render_parallel(world);
 
 }

@@ -16,7 +16,7 @@ $startTime = Get-Date
 Write-Host "Generating image, please wait..."
 
 # Run the main executable to generate the image
-.\build\main.exe > $outputFilename
+.\build\RayTracer.exe > $outputFilename
 
 # Stop the timer
 $endTime = Get-Date
